@@ -5,3 +5,5 @@
 *.synctex.gz
 *(busy)
 *.pdf
+node_modules/
+package-lock.json

@@ -1,0 +1,22 @@
+{
+  "name": "mylerningnotes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./test.jf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murasame0721/myLerningNotes.git"
+  },
+  "author": "Murasame0721",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Murasame0721/myLerningNotes/issues"
+  },
+  "homepage": "https://github.com/Murasame0721/myLerningNotes#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0"
+  }
+}

@@ -33,13 +33,10 @@ function findBestApproximate(target, accurate = 3) {
 function useFinding(num, text, accurate = 3) {
     const frag = findBestApproximate(num, accurate);
     const differance = Math.abs(frag[0] / frag[1] - num);
-    if (differance > Math.pow(10, -6)) {
-        console.log(`${text}的${accurate}位最佳逼近分数是${frag[0]} / ${frag[1]}.误差为${differance},为10的${Math.log10(differance)}次`);
-    } else {
-        console.log(`${text}的${accurate}位最佳逼近分数是${frag[0]} / ${frag[1]}.误差为${differance}`);
-
-    }
+    return (`${text}的${accurate}位最佳逼近分数是${frag[0]} / ${frag[1]}.误差为${differance}`);
 }
+
+this.exports={findBestApproximate,useFinding}
 
 useFinding(Math.LN2, 'ln 2');
 useFinding(Math.log(3), 'ln 3');
